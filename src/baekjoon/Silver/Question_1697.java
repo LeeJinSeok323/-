@@ -30,7 +30,7 @@ public class Question_1697 {
 			else {
 				if(cur[0]-1 > 0 && cur[2] != 1)
 					q.add(new Integer[]{cur[0]-1, cur[1]+1, -1});
-                if(cur[2] != -1 && cur[0]+1 < k)
+                if(cur[2] != -1 && cur[0]+1 <= k)
                 	q.add(new Integer[]{cur[0]+1, cur[1]+1, 1});
                 if(cur[0]*2 <= 2*k)
                 	q.add(new Integer[]{cur[0]*2, cur[1]+1, 0});
